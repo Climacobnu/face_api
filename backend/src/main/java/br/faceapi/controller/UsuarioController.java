@@ -18,12 +18,7 @@ import br.faceapi.model.Usuario;
 import br.faceapi.service.UsuarioService;
 import lombok.AllArgsConstructor;
 
-/* Foi utilizado a linha de comando: 
-chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security 
-na pasta c:\Program Files\Google\Chrome\Application, 
-para visualizar a pagina Http://localhost:4200  */
-
-@CrossOrigin("*")
+@CrossOrigin(origins = "*")
 @AllArgsConstructor
 @RestController
 @RequestMapping("/usuario")
