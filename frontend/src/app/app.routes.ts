@@ -5,11 +5,11 @@ export const routes: Routes = [
   {
     path: '',
     loadComponent: () => import('./usuario-list/usuario-list.component')
-  }
+  },
 
-{
-  path: '/new',
-  loadComponent: () => import('./usuario-list/usuario-form.component')
-}
+  {
+    path: 'new',
+    loadComponent: () => import('./usuario-form/usuario-form.component')
+  }
 
 ];

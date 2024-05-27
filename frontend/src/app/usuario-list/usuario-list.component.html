@@ -1,22 +1,29 @@
-<h2>Lista Usuarios</h2>
-<table>
+
+<h2 class="mb-5">Lista Usuarios</h2>
+
+<div class="text-end">
+  <button class="btn btn-primary" routerLink="/new">Novo Usuario</button>
+</div>
+
+<table class="table table-houver">
   <thead>
-  <tr>
-    <th>ID</th>
-    <th>Nome</th>
-    <th>CPF</th>
-    <th>Foto</th>
-    <th></th>
-  </tr>
-</thead>
-<tbody>
-  @for(usuario of usuarios; track usuario.id) {
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>CPF</th>
+      <th>Foto</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    @for(usuario of usuarios; track usuario.id) {
     <tr>
       <td>{{ usuario.id }}</td>
       <td>{{ usuario.nome }}</td>
       <td>{{ usuario.cpf }}</td>
-      <td>{{ usuario.urlAvatar }}</td>
+      <td>{{ usuario.urlAvatar }} </td>
       <td></td>
     </tr>
-  }
-</tbody>
+    }
+  </tbody>
+</table>
